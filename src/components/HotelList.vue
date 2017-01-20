@@ -79,6 +79,11 @@ export default {
           filter: true
         },
         {
+          label: 'Brand',
+          field: 'brand',
+          filter: true
+        },
+        {
           label: 'Utente',
           field: 'users',
           filter: true,
