@@ -28,6 +28,10 @@ export default new VueRouter({
         {
           path: 'hotel/list',
           component: load('HotelList')
+        },
+        {
+          path: 'channel/list',
+          component: load('ChannelList')
         }
       ]
     },
