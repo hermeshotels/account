@@ -90,6 +90,26 @@ export default {
           format: (value) => {
             return value.join(',')
           }
+        },
+        {
+          label: 'Mail',
+          field: 'mail',
+          filter: true
+        },
+        {
+          label: 'Mail Bol',
+          field: 'mail_bol',
+          filter: true
+        },
+        {
+          label: 'Mail Notify',
+          field: 'mail_notify',
+          filter: true
+        },
+        {
+          label: 'Mail director',
+          field: 'mail_director',
+          filter: true
         }
       ],
       table: []
