@@ -14,7 +14,6 @@
   </div>
 </template>
 <script>
-  import * as VueGoogleMaps from 'vue2-google-maps'
   export default {
     data () {
       return {
