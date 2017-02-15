@@ -6,10 +6,13 @@
       map-type-id="terrain"
       style="width: 100%; height: 100%"
       >
-      <gmap-marker
-        v-for="m in hotelCoords"
-        :position="m.position"
-      ></gmap-marker>
+      <google-cluster>
+        <gmap-marker
+          v-for="m in hotelCoords"
+          :position="m.position"
+          @mouseover="statusText = m.name"
+        ></gmap-marker>
+      </google-cluster>
     </gmap-map>
   </div>
 </template>
@@ -31,8 +34,7 @@
           this.$http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=AIzaSyCIXOlRBntjE_i0t_RUa3_KozNfxaE7qCc')
             .then((response) => {
               this.hotelCoords.push({
-                ifw: true,
-                ifw2text: hotel.name,
+                name: hotel.name,
                 position: response.body.results[0].geometry.location
               })
             })
