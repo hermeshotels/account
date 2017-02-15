@@ -13,6 +13,11 @@
           @mouseover="statusText = m.name"
         ></gmap-marker>
       </google-cluster>
+      <div slot="visible">
+        <div style="bottom: 0; left: 0; background-color: #0000FF; color: white; position: absolute; z-index: 100">
+          {{statusText}}
+        </div>
+      </div>
     </gmap-map>
   </div>
 </template>
@@ -21,7 +26,8 @@
     data () {
       return {
         center: {lat: 10.0, lng: 10.0},
-        hotelCoords: []
+        hotelCoords: [],
+        statusText: ''
       }
     },
     mounted () {
