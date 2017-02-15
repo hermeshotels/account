@@ -19,6 +19,7 @@ Vue.use(VueGoogleMaps, {
     key: 'AIzaSyCIXOlRBntjE_i0t_RUa3_KozNfxaE7qCc'
   }
 })
+Vue.component('google-cluster', VueGoogleMaps.Cluster);
 
 Quasar.start(() => {
   /* eslint-disable no-new */
