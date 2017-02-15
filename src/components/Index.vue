@@ -13,6 +13,7 @@
     <q-tabs slot="navigation">
       <q-tab icon="domain" route="/hotel/list" exact replace>Hotels</q-tab>
       <q-tab icon="compare_arrows" route="/channel/list" exact replace>Channel</q-tab>
+      <q-tab icon="map" route="/channel/map" exact replace>Map</q-tab>
     </q-tabs>
 
     <q-drawer left-side swipe-only ref="leftDrawer">

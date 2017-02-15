@@ -32,6 +32,10 @@ export default new VueRouter({
         {
           path: 'channel/list',
           component: load('ChannelList')
+        },
+        {
+          path: 'channel/map',
+          component: load('Map')
         }
       ]
     },
