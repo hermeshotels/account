@@ -110,6 +110,26 @@ export default {
           label: 'Mail director',
           field: 'mail_director',
           filter: true
+        },
+        {
+          label: 'BOL',
+          field: 'bol',
+          filter: true
+        },
+        {
+          label: 'Channel',
+          field: 'channel',
+          filter: true
+        },
+        {
+          label: 'WebJ',
+          field: 'webj',
+          filter: true
+        },
+        {
+          label: 'CROSS',
+          field: 'cross',
+          filter: true
         }
       ],
       table: []
